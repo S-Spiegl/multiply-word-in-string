@@ -4,6 +4,10 @@ describe('modifyMultiply', () => {
   it('works for a single input', () => {
     expect(modifyMultiply("string",0,1)).toEqual("string")
   })
+  it('works for a longer input', () => {
+    expect(modifyMultiply("hello world",0,1)).toEqual("hello")
+  })
+
 })
 
   // Test.assertEquals(modifyMultiply("This is a string",3 ,5), "string-string-string-string-string", "The string is incorrect");
