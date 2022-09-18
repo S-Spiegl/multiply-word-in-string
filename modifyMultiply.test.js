@@ -13,6 +13,9 @@ describe('modifyMultiply', () => {
   it('works for an even longer input with repeated word at later index', () => {
     expect(modifyMultiply("This is a string",1,1)).toEqual("is")
   })
+  it('works for an even longer input with repeated word at later index pt2', () => {
+    expect(modifyMultiply("This is a string",3,1)).toEqual("string")
+  })
 })
 
   // Test.assertEquals(modifyMultiply("This is a string",3 ,5), "string-string-string-string-string", "The string is incorrect");
