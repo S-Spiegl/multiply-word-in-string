@@ -7,6 +7,9 @@ describe('modifyMultiply', () => {
   it('works for a longer input', () => {
     expect(modifyMultiply("hello world",0,1)).toEqual("hello")
   })
+  it('works for an even longer input', () => {
+    expect(modifyMultiply("This is a string",0,1)).toEqual("This")
+  })
 
 })
 
