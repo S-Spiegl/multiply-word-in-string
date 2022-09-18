@@ -1,9 +1,9 @@
 function modifyMultiply (str,loc,num) {
-  output = ''
+  output = []
   for(i = 0; i < Number(num); i++){
-    output += str.split(' ')[Number(loc)]
+    output.push(str.split(' ')[Number(loc)])
   }
-  return output
+  return output.join(' ')
 } 
 
 module.exports = modifyMultiply
