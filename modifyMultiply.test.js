@@ -16,6 +16,10 @@ describe('modifyMultiply', () => {
   it('works for an even longer input with repeated word at later index pt2', () => {
     expect(modifyMultiply("This is a string",3,1)).toEqual("string")
   })
+  it('works joins output with hyphen', () => {
+    expect(modifyMultiply("This is a string",3,2)).toEqual("string-string")
+  })
+
 })
 
   // Test.assertEquals(modifyMultiply("This is a string",3 ,5), "string-string-string-string-string", "The string is incorrect");
